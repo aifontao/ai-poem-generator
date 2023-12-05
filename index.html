@@ -5,35 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>AI Poem Generator 🤖</title>
+    <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to the AI Poem Generator</h1>
-    </header>
-    <main>
-      <form action="" id="poem-generator-form">
-        <input
-          type="text"
-          placeholder="Enter the topic of the poem"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div class="poem" id="poem"></div>
-    </main>
-    <footer>
-      Coded by
-      <a href="https://github.com/aifontao" target="_blank">Ana Fontão</a>,
-      open-sourced on
-      <a href="https://github.com/aifontao/ai-poem-generator" target="_blank"
-        >Github</a
-      >
-      and hosted on
-      <a href="https://ai-poem-generator-aif.netlify.app/">Netlify</a>
-    </footer>
+    <div class="container">
+      <header>
+        <h1>Welcome to the AI Poem Generator</h1>
+      </header>
+      <main>
+        <div class="form-container">
+          <form action="" id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of the poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="input"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+        </div>
+        <div class="poem hidden" id="poem"></div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/aifontao" target="_blank">Ana Fontão</a>,
+        open-sourced on
+        <a href="https://github.com/aifontao/ai-poem-generator" target="_blank"
+          >Github</a
+        >
+        and hosted on
+        <a href="https://ai-poem-generator-aif.netlify.app/">Netlify</a>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
   </body>
-  <script src="src/index.js"></script>
 </html>
